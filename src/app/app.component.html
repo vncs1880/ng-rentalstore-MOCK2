@@ -1,4 +1,20 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1 class="title">Rental Store system</h1>
+<nav>
+  <!--<a routerLink="/transaction-center" routerLinkActive="active">Transaction Center</a>-->
+  <a routerLink="/actors" routerLinkActive="active">Actors</a>
+  <a routerLink="/vehicles" routerLinkActive="active">Vehicles</a>
+  <a routerLink="/rentals" routerLinkActive="active">Transactions</a>
+  <a routerLink="/admin" routerLinkActive="active">Admin</a>
+  <a routerLink="/login" routerLinkActive="active">Login</a>
+  <!--<a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>-->
+</nav>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

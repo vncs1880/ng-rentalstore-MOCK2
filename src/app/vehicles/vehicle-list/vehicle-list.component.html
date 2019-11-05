@@ -1,0 +1,19 @@
+<!--<h2>VEHICLES</h2>-->
+<!--<ul class="vehicles">
+  <li *ngFor="let vehicle of vehicles$ | async"
+    [class.selected]="vehicle.id === selectedId">
+    <a [routerLink]="['/vehicle', vehicle.id]">
+      <span class="badge">{{ vehicle.id }}</span>{{ vehicle.plate }}
+    </a>
+  </li>
+</ul>-->
+
+<ng2-smart-table [settings]="settings" [source]="vehicles$ | async"></ng2-smart-table>
+
+<!--<button routerLink="/sidekicks">Go to sidekicks</button>-->
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

@@ -1,0 +1,19 @@
+<h2>ACTORS</h2>
+<div *ngIf="actor$ | async as actor">
+  <h3>"{{ actor.firstname }}"</h3>
+  <div>
+    <label>Id: </label>{{ actor.id }}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="actor.firstname" placeholder="name"/>
+  </div>
+  <p>
+    <button (click)="gotoActors(actor)">Back</button>
+  </p>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

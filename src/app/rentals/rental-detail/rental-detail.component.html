@@ -1,0 +1,19 @@
+<h2>RENTALS</h2>
+<div *ngIf="rental$ | async as rental">
+  <h3>"{{ rental.id }}"</h3>
+  <div>
+    <label>Id: </label>{{ rental.id }}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="rental.id" placeholder="name"/>
+  </div>
+  <p>
+    <button (click)="gotoRentals(rental)">Back</button>
+  </p>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

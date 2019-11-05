@@ -1,0 +1,17 @@
+<!--<h2>ACTORS</h2>-->
+<!--<ul class="actors">
+  <li *ngFor="let actor of actors$ | async"
+    [class.selected]="actor.id === selectedId">
+    <a [routerLink]="['/actor', actor.id]">
+      <span class="badge">{{ actor.id }}</span>{{ actor.firstname }}
+    </a>
+  </li>
+</ul>-->
+
+<ng2-smart-table [settings]="settings" [source]="actors$ | async"></ng2-smart-table>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
